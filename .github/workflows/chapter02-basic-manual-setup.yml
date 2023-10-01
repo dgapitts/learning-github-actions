@@ -1,0 +1,22 @@
+name: first
+
+on: push
+
+jobs:
+    job1:
+        name: First Job
+        runs-on: ubuntu-latest
+        steps:
+            - name: Step one
+              run: |
+                echo "Step one ubuntu-latest"
+    job2:
+        name: Second Job
+        runs-on: windows-latest
+        steps:
+            - name: Step one
+              run: |
+                echo "Step one windows-latest"
+            - name: Step two
+              run: |
+                echo "Step two windows-latest"
